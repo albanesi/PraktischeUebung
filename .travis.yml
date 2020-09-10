@@ -10,16 +10,16 @@ stages:
 before_install:
   - chmod +x gradlew
   - sudo apt-get update
-
+  
 install:
   - sudo apt install curl
   - npm install -g newman
-
+   
 addons:
   sonarcloud:
     organization: $SONAR_USER
     token: $SONAR_TOKEN
-
+    
 jobs:
   include:
     - stage: continousIntegration
