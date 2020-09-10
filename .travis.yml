@@ -4,6 +4,7 @@ node_js:
   - 10
 
 stages:
+  - continousIntegration
   - continousDelivery
 
 before_install:
