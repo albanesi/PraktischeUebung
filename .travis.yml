@@ -23,7 +23,6 @@ addons:
 jobs:
   include:
     - stage: continousIntegration
-      script: ./gradlew sonarqube
     - stage: continousDelivery
       deploy:
         provider: heroku
