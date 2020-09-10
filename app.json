@@ -1,0 +1,7 @@
+{
+  "name": "PraktischeUebung",
+  "description": "Spring Boot App with CICD",
+  "repository": "https://github.com/albanesi/PraktischeUebung",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "static"]
+}
