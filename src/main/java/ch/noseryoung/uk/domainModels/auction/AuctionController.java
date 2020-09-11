@@ -33,12 +33,12 @@ public class AuctionController {
         return new ResponseEntity<>(auctionMapper.toDTO(auctionService.create(auctionMapper.fromDTO(auctionDTO))), HttpStatus.CREATED);
     }
 
-    // This endpoint retrieves all auctions as a list
+   /* // This endpoint retrieves all auctions as a list
     @GetMapping({"/", ""})
     public ResponseEntity<List<AuctionDTO>> getAll() {
 
         return new ResponseEntity<>(auctionMapper.toDTOs(auctionService.findAll()), HttpStatus.OK);
-    }
+    }*/
     @GetMapping("/{n1}/{n2}")
     public ResponseEntity<List<AuctionDTO>> getBetween(@PathVariable int n1,@PathVariable int n2){
         return new ResponseEntity<>(auctionMapper.toDTOs(auctionService.getBetween(n1,n2)),HttpStatus.OK);
