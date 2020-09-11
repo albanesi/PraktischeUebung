@@ -13,7 +13,7 @@ public class Auction {
     @Column(name = "id")
     private int id;
 
-
+    //its the name
     @Column(nullable = false)
     private String name;
 

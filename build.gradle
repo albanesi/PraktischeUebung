@@ -2,6 +2,8 @@ plugins {
 	id 'org.springframework.boot' version '2.2.5.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+	id 'war'
+	id "org.sonarqube" version "3.0"
 }
 
 group = 'ch.noseryoung'
@@ -67,6 +69,16 @@ dependencies {
 	bootJar {
 		archiveFileName.set("app.jar")
 	}
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "albanesi_PraktischeUebung"
+  }
+}
+
+bootJar {
+	archiveFileName.set("app.jar")
 }
 
 test {
