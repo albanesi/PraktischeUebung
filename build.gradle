@@ -73,6 +73,10 @@ sonarqube {
   }
 }
 
+bootJar {
+	archiveFileName.set("app.jar")
+}
+
 test {
 	useJUnitPlatform()
 }
