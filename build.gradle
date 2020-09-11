@@ -63,6 +63,10 @@ dependencies {
 
 	// mockito
 	testImplementation "org.mockito:mockito-core:3.0.0"
+
+	bootJar {
+		archiveFileName.set("app.jar")
+	}
 }
 
 test {
